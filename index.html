@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">My Library</div>
+    <div class="content">
+        <button id="addBookBtn">+ Add Book</button>
+        <div class="divider"></div>
+        <div class="card-wrapper" id="cardArea"></div>
+    </div>
+    <div class="footer"><p>Azizbek Chonoev &copy; 
+        <script>document.write(new Date().getFullYear())</script>
+        </p>
+    </div>
+    <dialog id="addBookDialog">
+        <form action="" class="add-book">
+            <div class="dialog-wrapper">
+                <h2>Add new book</h2>
+                <input id="formTitle" type="text"
+                    id="title"
+                    placeholder="Title"
+                    maxlength="100"
+                    required>
+                <input id="formAuthor" type="text"
+                    id="author"
+                    placeholder="Author"
+                    maxlength="100"
+                    required>
+                <input id="formPages" type="number"
+                    id="pages"
+                    placeholder="pages"
+                    max="9999"
+                    required>
+                <div id="check-group">
+                    <label for="check-group">Have you read it?</label>
+                    <input id="formIsRead" type="checkbox" class="checkbox" id="isRead">
+                </div>
+                <button type="submit" class="btn-green" id="submitBtn">Submit</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+</html>
